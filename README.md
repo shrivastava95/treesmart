@@ -25,6 +25,18 @@ Run
 curl -fsSL https://raw.githubusercontent.com/shrivastava95/treesmart/main/install.sh | bash
 ```
 
+OR
+
+Install with Nix (flake-enabled)
+
+```bash
+# Run without installing
+nix run github:shrivastava95/treesmart
+
+# Install into your profile
+nix profile install github:shrivastava95/treesmart
+```
+
 # Usage
 
 ```bash

@@ -11,7 +11,8 @@ fi
 echo "Installing treesmart..."
 
 mkdir -p "$DEST"
-cp treesmart/treesmart.sh "$DEST/treesmart"
+curl -fsSL https://raw.githubusercontent.com/shrivastava95/treesmart/main/treesmart/treesmart.sh \
+    -o "$DEST/treesmart"
 chmod 755 "$DEST/treesmart"
 
 echo "${GREEN}Installation finished${RESET}"

@@ -46,8 +46,8 @@ EOF
       filecnt[parent] += (type=="f")
       indent = ""; for(i=2;i<=n;i++) indent=indent"│   ";
 
-      if (type=="d") {
-          print indent "├── " basename(path);
+      if (type=="d") {          
+          print indent "├── " "\033[1;34m" basename(path) "\033[0m";
       } else if (type=="f") {
           if (filecnt[parent] <= LIMIT) {
               print indent "├── " basename(path);
